@@ -1,0 +1,29 @@
+{
+  "uuid": "4383e62f-0f9f-413b-91c2-927161fbe306",
+  "title": "Values equal to their index",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "for-loop",
+    "indexing",
+    "if-statement",
+    "accumulator"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

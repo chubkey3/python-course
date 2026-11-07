@@ -1,0 +1,2 @@
+# Force LF line endings: grader scripts and test files run on Linux.
+* text=auto eol=lf

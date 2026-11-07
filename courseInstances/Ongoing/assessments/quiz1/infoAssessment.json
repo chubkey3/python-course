@@ -1,0 +1,30 @@
+{
+  "uuid": "37579dbc-c86d-4f01-8a46-0a2f739bde4f",
+  "type": "Exam",
+  "title": "Loops, lists, and indexing",
+  "set": "Quiz",
+  "number": "1",
+  "text": "<p>Each question opens a VS Code workspace. Write your solution in <code>main.py</code>: read input with <code>input()</code> and print the answer with <code>print()</code>. You can test your code in the VS Code terminal with <code>python3 main.py</code> as often as you like. Click <strong>Save &amp; Grade</strong> on the question page to submit. Each question allows up to 20 graded submissions, all for full credit. You have 90 minutes once you start.</p>",
+  "shuffleQuestions": false,
+  "requireHonorCode": false,
+  "accessControl": [
+    {
+      "dateControl": {
+        "release": { "date": "2026-11-01T00:00:01" },
+        "due": { "date": null },
+        "durationMinutes": 90
+      }
+    }
+  ],
+  "zones": [
+    {
+      "questions": [
+        { "id": "loops-and-lists/factorial", "autoPoints": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] },
+        { "id": "loops-and-lists/countdown-by-step", "autoPoints": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] },
+        { "id": "loops-and-lists/sum-of-evens", "autoPoints": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] },
+        { "id": "loops-and-lists/value-equals-index", "autoPoints": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] },
+        { "id": "loops-and-lists/matching-positions", "autoPoints": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10] }
+      ]
+    }
+  ]
+}

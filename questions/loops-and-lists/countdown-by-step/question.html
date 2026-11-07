@@ -1,0 +1,45 @@
+<pl-question-panel>
+  <p>
+    Count down from a starting number. Start at <code>start</code>, then keep subtracting <code>step</code>.
+    Print every number that is greater than or equal to $0$. If the count lands exactly on $0$, print $0$ too.
+  </p>
+  <p><strong>Input:</strong> the first line contains the integer <code>start</code> ($0 \le$ <code>start</code> $\le 1000$).
+    The second line contains the integer <code>step</code> ($1 \le$ <code>step</code> $\le 100$).</p>
+  <p><strong>Output:</strong> print the numbers in the countdown, one per line.</p>
+  <p><strong>Sample input 1</strong></p>
+  <pre>10
+2</pre>
+  <p><strong>Sample output 1</strong></p>
+  <pre>10
+8
+6
+4
+2
+0</pre>
+  <p>The count lands on $0$, so $0$ is printed.</p>
+  <p><strong>Sample input 2</strong></p>
+  <pre>10
+3</pre>
+  <p><strong>Sample output 2</strong></p>
+  <pre>10
+7
+4
+1</pre>
+  <p>The next number after $1$ would be $-2$, which is below $0$, so the count stops at $1$.</p>
+
+  <p>
+    Write your solution in <code>main.py</code> in the workspace. Read input with <code>input()</code> and
+    print your answer with <code>print()</code>. Do not print any extra text such as prompts.
+  </p>
+  <p>
+    To test, open a terminal in VS Code and run <code>python3 main.py &lt; sample_input.txt</code>
+    (or run <code>python3 main.py</code> and type the input yourself). When you are ready, click
+    <strong>Save &amp; Grade</strong> below. Your code is run on the sample tests and on hidden tests.
+  </p>
+  <pl-workspace></pl-workspace>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>

@@ -1,0 +1,76 @@
+{
+  "name": "Python",
+  "title": "Competitive Programming in Python",
+  "timezone": "America/Vancouver",
+  "assessmentSets": [
+    {
+      "abbreviation": "HW",
+      "name": "Homework",
+      "heading": "Homeworks",
+      "color": "green1"
+    },
+    {
+      "abbreviation": "Q",
+      "name": "Quiz",
+      "heading": "Quizzes",
+      "color": "yellow1"
+    },
+    {
+      "abbreviation": "E",
+      "name": "Exam",
+      "heading": "Exams",
+      "color": "red1"
+    }
+  ],
+  "topics": [
+    {
+      "name": "Loops and lists",
+      "color": "blue1",
+      "description": "for/while loops, range(), iterating with and without indices, basic searching and sorting, break/continue, looping over strings."
+    },
+    {
+      "name": "List operations",
+      "color": "turquoise1",
+      "description": "Creating lists, negative indexing, slicing, non-mutating and mutating list methods, nested lists."
+    },
+    {
+      "name": "String operations",
+      "color": "green2",
+      "description": "String methods, formatting, and manipulation."
+    },
+    {
+      "name": "Functions",
+      "color": "purple1",
+      "description": "Defining and calling functions, parameters, return values."
+    },
+    {
+      "name": "Dictionaries and sets",
+      "color": "orange1",
+      "description": "dict and set types, counting, membership, lookups."
+    },
+    {
+      "name": "Standard library",
+      "color": "brown1",
+      "description": "Useful standard library modules for competitive programming (collections, itertools, math, heapq, bisect, ...)."
+    }
+  ],
+  "tags": [
+    { "name": "stdio", "color": "gray1", "description": "Reads from standard input and writes to standard output." },
+    { "name": "for-loop", "color": "blue2", "description": "for loop patterns (start, stop, step)." },
+    { "name": "range", "color": "blue2", "description": "Uses range() with start/stop/step." },
+    { "name": "iterators", "color": "blue2", "description": "Iterating directly over items (non-index loops)." },
+    { "name": "indexing", "color": "blue2", "description": "Looping over or accessing lists by index." },
+    { "name": "if-statement", "color": "blue2", "description": "Conditionals inside loops." },
+    { "name": "accumulator", "color": "blue2", "description": "Running totals, products, or counters." },
+    { "name": "searching", "color": "blue3", "description": "Largest/smallest, most frequent, counting occurrences." },
+    { "name": "sorting", "color": "blue3", "description": "Basic sorting algorithms." },
+    { "name": "while-loop", "color": "blue3", "description": "while loops." },
+    { "name": "break-continue", "color": "blue3", "description": "Uses break and/or continue." },
+    { "name": "string-loop", "color": "blue3", "description": "Looping over the characters of a string." },
+    { "name": "negative-index", "color": "turquoise2", "description": "Negative indexing into lists." },
+    { "name": "slicing", "color": "turquoise2", "description": "List or string slicing." },
+    { "name": "non-mutating", "color": "turquoise2", "description": "count(), sorted(), len(), min(), max(), sum(), index()." },
+    { "name": "mutating", "color": "turquoise2", "description": "sort(), append(), insert(), extend(), remove(), pop(), reverse()." },
+    { "name": "nested-lists", "color": "turquoise2", "description": "Lists of lists." }
+  ]
+}

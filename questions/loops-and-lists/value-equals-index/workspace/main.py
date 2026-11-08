@@ -1,6 +1,6 @@
 # Values equal to their index
 # Read N, then read N integers (one per line) into a list nums.
-# Print how many indices i have nums[i] == i  (indices start at 0).
+# Print how many indices i have nums[i] == i.
 #
 # Test:  python3 main.py < sample_input.txt
 

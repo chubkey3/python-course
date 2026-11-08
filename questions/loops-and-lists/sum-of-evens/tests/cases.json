@@ -7,14 +7,16 @@
       "input": "5\n1\n2\n3\n4\n5\n",
       "output": "6\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "The even numbers are $2$ and $4$, and $2 + 4 = 6$."
     },
     {
       "name": "Sample 2",
       "input": "4\n3\n4\n7\n8\n",
       "output": "12\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "The even numbers are $4$ and $8$, so the answer is $12$. (Summing the values at even indices would give $3 + 7 = 10$, which is wrong.)"
     },
     {
       "name": "Hidden 1",

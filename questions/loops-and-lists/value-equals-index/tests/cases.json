@@ -7,14 +7,16 @@
       "input": "4\n0\n5\n2\n1\n",
       "output": "2\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "<code>nums[0] == 0</code> and <code>nums[2] == 2</code>, so the answer is $2$."
     },
     {
       "name": "Sample 2",
       "input": "4\n3\n1\n2\n3\n",
       "output": "3\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "Indices $1$, $2$, and $3$ match, so the answer is $3$."
     },
     {
       "name": "Hidden 1",

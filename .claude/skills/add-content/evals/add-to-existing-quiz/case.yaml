@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: add-to-existing-quiz
+expected_outcome: |
+  Q1 gains two questions (t6 workspace, t7 in-browser editor) with the same 20 full-credit tries, a warning about students who already started, Q1's text no longer claims every question opens a workspace, everything validated, judge-tested, committed.

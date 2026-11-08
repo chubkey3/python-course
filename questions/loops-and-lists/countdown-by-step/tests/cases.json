@@ -7,14 +7,16 @@
       "input": "10\n2\n",
       "output": "10\n8\n6\n4\n2\n0\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "The count lands on $0$, so $0$ is printed."
     },
     {
       "name": "Sample 2",
       "input": "10\n3\n",
       "output": "10\n7\n4\n1\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "The next number after $1$ would be $-2$, which is below $0$, so the count stops at $1$."
     },
     {
       "name": "Hidden 1",

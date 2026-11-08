@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: new-exam-reuse-bank
+expected_outcome: |
+  A new Exam-type E1 that reuses the two existing bank questions, adds one new String-operations judge question, asks every exam setting and applies the instructor's answers exactly, validated, judge-tested, committed.

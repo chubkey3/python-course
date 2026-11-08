@@ -7,14 +7,16 @@
       "input": "5\n",
       "output": "120\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "$5! = 1 \\times 2 \\times 3 \\times 4 \\times 5 = 120$."
     },
     {
       "name": "Sample 2",
       "input": "0\n",
       "output": "1\n",
       "points": 1,
-      "hidden": false
+      "hidden": false,
+      "explanation": "By definition, $0! = 1$."
     },
     {
       "name": "Hidden 1",

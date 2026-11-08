@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: new-homework-list-ops
+expected_outcome: |
+  A new Homework-type HW1 (List operations) due 2026-11-20 with three questions: two judge-graded VS Code workspace coding questions and one checkbox concept check, all validated, judge-tested, and committed.

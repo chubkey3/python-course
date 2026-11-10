@@ -1,0 +1,172 @@
+{
+  "uuid": "5cad9525-6b25-40f4-a7a6-8051b19c0915",
+  "type": "Homework",
+  "title": "Loops and lists: concept practice",
+  "set": "Homework",
+  "number": "1",
+  "text": "<p>Answer each question right on the page. A wrong choice shows a short hint, and the full explanation appears once you get the question right or after 3 tries. Use the copy buttons to paste code into Python and try it yourself.</p>",
+  "accessControl": [
+    {
+      "dateControl": {
+        "release": {
+          "date": "2026-11-10T00:00:01"
+        },
+        "due": {
+          "date": "2026-11-21T23:59:59"
+        }
+      },
+      "afterComplete": {
+        "questions": {
+          "hidden": false
+        }
+      }
+    }
+  ],
+  "zones": [
+    {
+      "title": "Types, indices and values",
+      "questions": [
+        {
+          "id": "loops-and-lists/type-int-list-str",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/index-or-value",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    },
+    {
+      "title": "What will this print?",
+      "questions": [
+        {
+          "id": "loops-and-lists/print-indices",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/print-neighbour-differences",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/print-after-changing-iterator",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/print-empty-range",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    },
+    {
+      "title": "Fill in the missing code",
+      "questions": [
+        {
+          "id": "loops-and-lists/fill-in-index-loops",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/order-read-and-reverse",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    },
+    {
+      "title": "Debugging",
+      "questions": [
+        {
+          "id": "loops-and-lists/debug-str-in-range",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/debug-range-of-list",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/debug-index-out-of-range",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/debug-total-not-defined",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    },
+    {
+      "title": "Rolling sums",
+      "questions": [
+        {
+          "id": "loops-and-lists/rolling-sum-trace",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/rolling-sum-reset",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/rolling-sum-which-body",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/count-or-sum",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    },
+    {
+      "title": "While loops",
+      "questions": [
+        {
+          "id": "loops-and-lists/while-step",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-start-index",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-never-stops",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-pop",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-break",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-stop-at-zero",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        },
+        {
+          "id": "loops-and-lists/while-fill-in",
+          "autoPoints": 2,
+          "triesPerVariant": 3
+        }
+      ]
+    }
+  ]
+}

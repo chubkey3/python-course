@@ -1,0 +1,39 @@
+<pl-question-panel>
+  <p>Fill in the blanks so this while loop prints the same thing as</p>
+  <pre>for i in range(len(nums)):
+    print(nums[i])</pre>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+</pl-question-panel>
+
+<p>Blank <code>__1__</code>: <pl-multiple-choice answers-name="b1" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">0</pl-answer>
+  <pl-answer correct="false">1</pl-answer>
+  <pl-answer correct="false">-1</pl-answer>
+  <pl-answer correct="false">len(nums)</pl-answer>
+</pl-multiple-choice><br>
+Blank <code>__2__</code>: <pl-multiple-choice answers-name="b2" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">&lt;</pl-answer>
+  <pl-answer correct="false">&lt;=</pl-answer>
+  <pl-answer correct="false">&gt;</pl-answer>
+  <pl-answer correct="false">==</pl-answer>
+</pl-multiple-choice><br>
+Blank <code>__3__</code>: <pl-multiple-choice answers-name="b3" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">+= 1</pl-answer>
+  <pl-answer correct="false">-= 1</pl-answer>
+  <pl-answer correct="false">= 1</pl-answer>
+  <pl-answer correct="false">+ 1</pl-answer>
+</pl-multiple-choice></p>
+
+<pl-answer-panel>
+  <pre>nums = [6, 1, 9]
+i = 0
+while i &lt; len(nums):
+    print(nums[i])
+    i += 1</pre>
+  <p>A while loop over a list needs three things: <strong>start</strong> the index at <code>0</code>, <strong>keep going</strong> while <code>i &lt; len(nums)</code>, and <strong>move</strong> to the next index with <code>i += 1</code>.</p>
+  <ul>
+    <li><code>&lt;=</code> would also try <code>nums[3]</code>, which doesn't exist (IndexError).</li>
+    <li><code>-= 1</code> would go backwards to <code>nums[-1]</code>, <code>nums[-2]</code>, ... and then crash.</li>
+    <li><code>= 1</code> would set <code>i</code> back to 1 every time, and <code>+ 1</code> calculates a number without saving it: both loop forever.</li>
+  </ul>
+</pl-answer-panel>

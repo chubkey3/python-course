@@ -1,0 +1,26 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><pre>Removed: email
+Removed: report
+Removed: call
+0</pre></pl-answer>
+  <pl-answer correct="false" feedback="That is what pop() with no index would do (it removes from the end). pop(0) removes from the front."><pre>Removed: call
+Removed: report
+Removed: email
+0</pre></pl-answer>
+  <pl-answer correct="false" feedback="pop really removes items, so the list is empty at the end."><pre>Removed: email
+Removed: report
+Removed: call
+3</pre></pl-answer>
+  <pl-answer correct="false" feedback="The while loop keeps going while the list still has items."><pre>Removed: email
+2</pre></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>pop(0)</code> removes and returns the item at index 0, the <strong>front</strong> of the list. The loop repeats while the list has items: email, then report, then call. Then the list is empty, so <code>len(tasks)</code> is <code>0</code>.</p>
+</pl-answer-panel>

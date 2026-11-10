@@ -1,0 +1,23 @@
+<pl-question-panel>
+  <p>This program crashes:</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true" show-line-numbers="true"></pl-code>
+  <p>Python shows this error:</p>
+  <pre>Traceback (most recent call last):
+  File &quot;main.py&quot;, line 3, in &lt;module&gt;
+    total = total + x
+            ^^^^^
+NameError: name &#x27;total&#x27; is not defined</pre>
+  <p>Which change fixes it?</p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="fix" weight="1">
+  <pl-answer correct="true">Add <code>total = 0</code> before the loop</pl-answer>
+  <pl-answer correct="false" feedback="No crash, but total resets to 0 every time, so it prints only the last item, 1.">Add <code>total = 0</code> inside the loop, just before <code>total = total + x</code></pl-answer>
+  <pl-answer correct="false" feedback="Too late: the crash happens inside the loop, before this line runs.">Add <code>total = 0</code> after the loop</pl-answer>
+  <pl-answer correct="false" feedback="No crash, but total just becomes each item in turn, so it prints only the last one, 1.">Change <code>total = total + x</code> to <code>total = x</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>total = total + x</code> means "the new total is the old total plus x". The first time through, there is no old total yet, so Python says <code>total</code> is not defined.</p>
+  <p>Give it a starting value <strong>before</strong> the loop: <code>total = 0</code>. Then the program prints <code>12</code>.</p>
+</pl-answer-panel>

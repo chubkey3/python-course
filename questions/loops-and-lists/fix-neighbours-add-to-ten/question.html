@@ -1,0 +1,36 @@
+<pl-question-panel>
+  <p>The program in the editor is supposed to count how many pairs of neighbours, <code>nums[i]</code> and <code>nums[i + 1]</code>, add up to $10$. It has <strong>2 bugs</strong>. Run it, read the errors, and fix them.</p>
+  <p><strong>Input:</strong> the first line contains an integer $N$ ($1 \le N \le 1000$), the length of the list. Each of the next $N$ lines contains one integer of the list (between $-1000$ and $1000$).</p>
+  <p><strong>Output:</strong> print the number of neighbour pairs that add up to $10$.</p>
+  <!-- BEGIN SAMPLES (generated from tests/cases.json by tools/check_question.py --fix; edit cases.json, not this block) -->
+  <p><strong>Sample input 1</strong></p>
+  <pl-code copy-code-button="true">5
+3
+7
+3
+5
+5</pl-code>
+  <p><strong>Sample output 1</strong></p>
+  <pre>3</pre>
+  <p>$3 + 7$, $7 + 3$ and $5 + 5$ add up to $10$, but $3 + 5$ doesn't. The answer is $3$.</p>
+  <p><strong>Sample input 2</strong></p>
+  <pl-code copy-code-button="true">1
+10</pl-code>
+  <p><strong>Sample output 2</strong></p>
+  <pre>0</pre>
+  <p>A single number has no neighbour, so the answer is $0$.</p>
+  <!-- END SAMPLES -->
+
+  <pl-file-editor file-name="main.py" ace-mode="ace/mode/python" source-file-name="starter.py"></pl-file-editor>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>
+
+<pl-answer-panel>
+  <p><strong>Model solution</strong></p>
+  <pl-code language="python" source-file-name="tests/solution.py"></pl-code>
+  <ul><li><strong>Bug 1:</strong> <code>count</code> never gets a starting value, so <code>count = count + 1</code> fails with <code>NameError</code>. Add <code>count = 0</code> before the loop.</li><li><strong>Bug 2:</strong> on the last pass, <code>i</code> is <code>n - 1</code> and <code>nums[i + 1]</code> is <code>nums[n]</code>, which doesn't exist (<code>IndexError: list index out of range</code>). The last pair starts at index <code>n - 2</code>, so loop over <code>range(n - 1)</code>.</li></ul>
+</pl-answer-panel>

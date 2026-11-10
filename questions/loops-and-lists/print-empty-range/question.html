@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>done</code></pl-answer>
+  <pl-answer correct="false" feedback="range(5, 2) counts UP from 5, but 5 is already past 2."><code>hi hi hi done</code></pl-answer>
+  <pl-answer correct="false" feedback="print(&#x27;done&#x27;) is after the loop, so it always runs."><code>hi hi hi</code></pl-answer>
+  <pl-answer correct="false" feedback="The loop body never runs, not even once."><code>hi done</code></pl-answer>
+  <pl-answer correct="false" feedback="print(&#x27;done&#x27;) is after the loop, so it always runs."><code>(nothing)</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p>Without a step, <code>range</code> counts <strong>up</strong> by 1. <code>range(5, 2)</code> starts at 5, which is already past the stop value 2, so it is empty and the loop body never runs. Only <code>done</code> prints. (To count down you would need <code>range(5, 2, -1)</code>.)</p>
+</pl-answer-panel>

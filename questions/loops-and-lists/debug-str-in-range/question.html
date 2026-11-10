@@ -1,0 +1,25 @@
+<pl-question-panel>
+  <p>This program crashes when you type <code>3</code> as the input:</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true" show-line-numbers="true"></pl-code>
+  <p>Python shows this error:</p>
+  <pre>Traceback (most recent call last):
+  File &quot;main.py&quot;, line 2, in &lt;module&gt;
+    for i in range(n):
+             ~~~~~^^^
+TypeError: &#x27;str&#x27; object cannot be interpreted as an integer</pre>
+  <p>Which change fixes it?</p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="fix" weight="1">
+  <pl-answer correct="true">Change <code>n = input()</code> to <code>n = int(input())</code></pl-answer>
+  <pl-answer correct="false" feedback="No crash, but len(&#x27;3&#x27;) is 1 (one character), so it prints only 0.">Change <code>range(n)</code> to <code>range(len(n))</code></pl-answer>
+  <pl-answer correct="false" feedback="No crash, but it loops over the characters of the text &#x27;3&#x27; and prints 3.">Change <code>for i in range(n):</code> to <code>for i in n:</code></pl-answer>
+  <pl-answer correct="false" feedback="str() makes text, and n is already text. range() needs an int.">Change <code>range(n)</code> to <code>range(str(n))</code></pl-answer>
+  <pl-answer correct="false" feedback="The crash is on line 2, before print ever runs.">Change <code>print(i)</code> to <code>print(int(i))</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><strong><code>str</code> means string</strong>, which is text. <code>input()</code> <em>always</em> gives back text, even when you type <code>3</code>: you get <code>&#x27;3&#x27;</code>, not <code>3</code>.
+  <code>range()</code> needs a whole number (<code>int</code>), so Python complains it can't use a <code>str</code> as an integer.</p>
+  <p>Fix: convert as you read, <code>n = int(input())</code>. Then the program prints <code>0 1 2</code>.</p>
+</pl-answer-panel>

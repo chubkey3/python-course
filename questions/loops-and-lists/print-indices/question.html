@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>0 1 2 3 4</code></pl-answer>
+  <pl-answer correct="false" feedback="Those are the values. The code prints i, the index."><code>3 1 4 1 5</code></pl-answer>
+  <pl-answer correct="false" feedback="range starts at 0, not 1."><code>1 2 3 4 5</code></pl-answer>
+  <pl-answer correct="false" feedback="range(5) stops before 5."><code>0 1 2 3 4 5</code></pl-answer>
+  <pl-answer correct="false" feedback="print is inside the loop, so it runs every time."><code>5</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>range(len(nums))</code> is <code>range(5)</code>, which gives <code>0, 1, 2, 3, 4</code>. The code prints <code>i</code> (the index), not <code>nums[i]</code> (the value), so it prints <code>0 1 2 3 4</code>.</p>
+</pl-answer-panel>

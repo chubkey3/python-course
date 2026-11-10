@@ -1,0 +1,11 @@
+{
+  "uuid": "ae3fcd99-4cea-415f-9a9c-c56a03e66857",
+  "title": "Rolling sum: trace it",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "accumulator",
+    "indexing"
+  ],
+  "type": "v3"
+}

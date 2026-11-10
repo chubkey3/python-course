@@ -1,0 +1,28 @@
+<pl-question-panel>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p>Choose the line that goes in the blank for each task.</p>
+</pl-question-panel>
+
+<p><strong>(a)</strong> Print <strong>how many</strong> even numbers there are: <pl-multiple-choice answers-name="count" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">answer = answer + 1</pl-answer>
+  <pl-answer correct="false">answer = answer + nums[i]</pl-answer>
+  <pl-answer correct="false">answer = answer + i</pl-answer>
+  <pl-answer correct="false">answer = nums[i]</pl-answer>
+  <pl-answer correct="false">answer = 1</pl-answer>
+</pl-multiple-choice></p>
+<p><strong>(b)</strong> Print the <strong>sum</strong> of the even numbers: <pl-multiple-choice answers-name="sum" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="false">answer = answer + 1</pl-answer>
+  <pl-answer correct="true">answer = answer + nums[i]</pl-answer>
+  <pl-answer correct="false">answer = answer + i</pl-answer>
+  <pl-answer correct="false">answer = nums[i]</pl-answer>
+  <pl-answer correct="false">answer = 1</pl-answer>
+</pl-multiple-choice></p>
+
+<pl-answer-panel>
+  <p>The even numbers are <code>8</code> (index 1) and <code>6</code> (index 2).</p>
+  <ul>
+    <li><strong>Counting</strong> adds <strong>1</strong> each time: <code>answer = answer + 1</code> prints <code>2</code>.</li>
+    <li><strong>Summing</strong> adds <strong>the item</strong> each time: <code>answer = answer + nums[i]</code> prints <code>14</code>.</li>
+  </ul>
+  <p>The other lines: <code>answer = answer + i</code> adds the indices (prints 3), <code>answer = nums[i]</code> keeps only the last even item (prints 6), and <code>answer = 1</code> just sets it to 1.</p>
+</pl-answer-panel>

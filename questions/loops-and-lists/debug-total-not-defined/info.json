@@ -1,0 +1,12 @@
+{
+  "uuid": "ee5c70b5-504b-4503-bd0f-ead65d15b08a",
+  "title": "Debugging: NameError",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "MC",
+    "accumulator",
+    "iterators"
+  ],
+  "type": "v3"
+}

@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>1 3 2</code></pl-answer>
+  <pl-answer correct="false" feedback="break happens before print, so 5 is not printed."><code>1 3 2 5</code></pl-answer>
+  <pl-answer correct="false" feedback="break ends the whole loop, not just this time through."><code>1 3 2 5 8 9</code></pl-answer>
+  <pl-answer correct="false" feedback="2 is not 5, so it prints."><code>1 3</code></pl-answer>
+  <pl-answer correct="false" feedback="That would be skipping 5 and carrying on (like continue). break stops the loop completely."><code>1 3 2 8 9</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p>It prints each number until it reaches <code>5</code>. Then <code>break</code> ends the loop <strong>immediately</strong>, before the <code>print</code>, so 5, 8 and 9 are never printed.</p>
+</pl-answer-panel>

@@ -1,0 +1,23 @@
+<pl-question-panel>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p>Fill in the value of <code>total</code> right after the line <code>total = total + nums[i]</code> runs, each time through the loop.</p>
+</pl-question-panel>
+
+<table class="table table-sm">
+  <tr><th>Time through the loop</th><th><code>total</code></th></tr>
+  <tr><td>after <code>i = 0</code> (adding <code>nums[0]</code>)</td><td><pl-integer-input answers-name="t0" correct-answer="4" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td>after <code>i = 1</code> (adding <code>nums[1]</code>)</td><td><pl-integer-input answers-name="t1" correct-answer="11" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td>after <code>i = 2</code> (adding <code>nums[2]</code>)</td><td><pl-integer-input answers-name="t2" correct-answer="13" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td>after <code>i = 3</code> (adding <code>nums[3]</code>)</td><td><pl-integer-input answers-name="t3" correct-answer="18" size="5" show-help-text="false"></pl-integer-input></td></tr>
+</table>
+
+<pl-answer-panel>
+  <p><code>total = total + nums[i]</code> means: <strong>new total = old total + this item</strong>.</p>
+  <table class="table table-sm">
+    <tr><th><code>i</code></th><th><code>nums[i]</code></th><th>old total</th><th>new total</th></tr>
+    <tr><td>0</td><td>4</td><td>0</td><td>0 + 4 = 4</td></tr>
+    <tr><td>1</td><td>7</td><td>4</td><td>4 + 7 = 11</td></tr>
+    <tr><td>2</td><td>2</td><td>11</td><td>11 + 2 = 13</td></tr>
+    <tr><td>3</td><td>5</td><td>13</td><td>13 + 5 = 18</td></tr>
+  </table>
+</pl-answer-panel>

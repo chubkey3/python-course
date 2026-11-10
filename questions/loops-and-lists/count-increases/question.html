@@ -1,0 +1,40 @@
+<pl-question-panel>
+  <p>You are given a list of integers <code>nums</code>. Count the indices <code>i</code> where <code>nums[i] &gt; nums[i - 1]</code>, that is, how many items are bigger than the item just before them.</p>
+  <p><strong>Input:</strong> the first line contains an integer $N$ ($1 \le N \le 1000$), the length of the list. Each of the next $N$ lines contains one integer of the list (between $-1000$ and $1000$).</p>
+  <p><strong>Output:</strong> print the number of such indices.</p>
+  <!-- BEGIN SAMPLES (generated from tests/cases.json by tools/check_question.py --fix; edit cases.json, not this block) -->
+  <p><strong>Sample input 1</strong></p>
+  <pl-code copy-code-button="true">6
+1
+4
+2
+2
+5
+7</pl-code>
+  <p><strong>Sample output 1</strong></p>
+  <pre>3</pre>
+  <p>$4 &gt; 1$, $5 &gt; 2$ and $7 &gt; 5$, so the answer is $3$. The second $2$ is equal to the item before it, so it doesn't count.</p>
+  <p><strong>Sample input 2</strong></p>
+  <pl-code copy-code-button="true">4
+8
+3
+5
+1</pl-code>
+  <p><strong>Sample output 2</strong></p>
+  <pre>1</pre>
+  <p>Only $5 &gt; 3$ counts, so the answer is $1$. Index $0$ has no item before it.</p>
+  <!-- END SAMPLES -->
+
+  <pl-workspace></pl-workspace>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>
+
+<pl-answer-panel>
+  <p><strong>Model solution</strong></p>
+  <pl-code language="python" source-file-name="tests/solution.py"></pl-code>
+  <p>The item before index <code>i</code> is at index <code>i - 1</code>. Index 0 has nothing before it, so the loop starts at <code>1</code>: <code>range(1, n)</code>. Starting at 0 would not crash, but it would compare <code>nums[0]</code> with <code>nums[-1]</code>, the <em>last</em> item, and could count one extra.</p>
+</pl-answer-panel>

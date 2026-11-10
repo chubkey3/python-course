@@ -1,0 +1,23 @@
+{
+  "uuid": "a2823b09-a653-4733-9be3-f0c38de08ac2",
+  "title": "Fix the bugs: neighbours that add to 10",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "for-loop",
+    "indexing",
+    "if-statement",
+    "accumulator"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

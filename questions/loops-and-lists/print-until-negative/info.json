@@ -1,0 +1,28 @@
+{
+  "uuid": "f4f2af30-6ee7-4192-87e0-bfefb61a0b01",
+  "title": "Print until the first negative",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "while-loop",
+    "indexing",
+    "break-continue"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

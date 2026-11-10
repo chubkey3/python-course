@@ -1,0 +1,55 @@
+{
+  "uuid": "006448ef-0e84-477e-a900-729a6581cc75",
+  "type": "Homework",
+  "title": "Loops and lists: coding practice",
+  "set": "Homework",
+  "number": "2",
+  "text": "<p>Write each solution in <code>main.py</code>: read input with <code>input()</code> and print the answer with <code>print()</code>. Most questions open a VS Code workspace; the \"Fix the bugs\" question has an editor right on the page. Test as often as you like, then click <strong>Save &amp; Grade</strong>. You can resubmit as many times as you want before the due date. The model solution appears once you score 100% on a question.</p>",
+  "accessControl": [
+    {
+      "dateControl": {
+        "release": {
+          "date": "2026-11-10T00:00:01"
+        },
+        "due": {
+          "date": "2026-11-21T23:59:59"
+        }
+      },
+      "afterComplete": {
+        "questions": {
+          "hidden": false
+        }
+      }
+    }
+  ],
+  "zones": [
+    {
+      "questions": [
+        {
+          "id": "loops-and-lists/running-total",
+          "autoPoints": 10
+        },
+        {
+          "id": "loops-and-lists/count-increases",
+          "autoPoints": 10
+        },
+        {
+          "id": "loops-and-lists/largest-and-index",
+          "autoPoints": 10
+        },
+        {
+          "id": "loops-and-lists/fix-neighbours-add-to-ten",
+          "autoPoints": 10
+        },
+        {
+          "id": "loops-and-lists/sum-until-zero",
+          "autoPoints": 10
+        },
+        {
+          "id": "loops-and-lists/print-until-negative",
+          "autoPoints": 10
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "uuid": "69b4d75b-3e0b-4474-bf99-6fc485e69b98",
+  "title": "Count the increases",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "for-loop",
+    "indexing",
+    "if-statement",
+    "accumulator"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

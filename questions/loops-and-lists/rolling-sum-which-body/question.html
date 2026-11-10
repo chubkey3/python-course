@@ -1,0 +1,20 @@
+<pl-question-panel>
+  <p>Which line, put in the blank, makes this program print <code>18</code> (the sum of the list)?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="body" weight="1">
+  <pl-answer correct="true"><code>total = total + nums[i]</code></pl-answer>
+  <pl-answer correct="false" feedback="That adds the indices 0 + 1 + 2 + 3, so it prints 6."><code>total = total + i</code></pl-answer>
+  <pl-answer correct="false" feedback="That replaces total with each item, so it prints the last item, 5."><code>total = nums[i]</code></pl-answer>
+  <pl-answer correct="false" feedback="That calculates a sum but never saves it, so total stays 0."><code>total + nums[i]</code></pl-answer>
+  <pl-answer correct="false" feedback="That counts the items, so it prints 4."><code>total = total + 1</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>total = total + nums[i]</code>: take the old total, add this item, and save it back into <code>total</code>.</p>
+  <table class="table table-sm">
+    <tr><th>Line</th><th>Prints</th><th>Why</th></tr>
+    <tr><td><code>total = total + nums[i]</code></td><td>18</td><td>Adds every item: 4 + 7 + 2 + 5.</td></tr><tr><td><code>total = total + i</code></td><td>6</td><td>That adds the indices 0 + 1 + 2 + 3, so it prints 6.</td></tr><tr><td><code>total = nums[i]</code></td><td>5</td><td>That replaces total with each item, so it prints the last item, 5.</td></tr><tr><td><code>total + nums[i]</code></td><td>0</td><td>That calculates a sum but never saves it, so total stays 0.</td></tr><tr><td><code>total = total + 1</code></td><td>4</td><td>That counts the items, so it prints 4.</td></tr>
+  </table>
+</pl-answer-panel>

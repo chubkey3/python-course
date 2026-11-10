@@ -1,0 +1,32 @@
+<pl-question-panel>
+  <p>You are given a list of integers. After each number, print the <strong>running total</strong>: the sum of all the numbers so far.</p>
+  <p><strong>Input:</strong> the first line contains an integer $N$ ($1 \le N \le 1000$), the length of the list. Each of the next $N$ lines contains one integer of the list (between $-1000$ and $1000$).</p>
+  <p><strong>Output:</strong> print $N$ lines. Line $k$ is the sum of the first $k$ numbers.</p>
+  <!-- BEGIN SAMPLES (generated from tests/cases.json by tools/check_question.py --fix; edit cases.json, not this block) -->
+  <p><strong>Sample input 1</strong></p>
+  <pl-code copy-code-button="true">4
+3
+1
+4
+2</pl-code>
+  <p><strong>Sample output 1</strong></p>
+  <pre>3
+4
+8
+10</pre>
+  <p>The running totals are $3$, then $3 + 1 = 4$, then $4 + 4 = 8$, then $8 + 2 = 10$.</p>
+  <!-- END SAMPLES -->
+
+  <pl-workspace></pl-workspace>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>
+
+<pl-answer-panel>
+  <p><strong>Model solution</strong></p>
+  <pl-code language="python" source-file-name="tests/solution.py"></pl-code>
+  <p>Keep a rolling sum with <code>total = total + nums[i]</code>, starting from <code>total = 0</code> <em>before</em> the loop. The <code>print</code> goes <strong>inside</strong> the loop, so a total is printed after every number, not just at the end.</p>
+</pl-answer-panel>

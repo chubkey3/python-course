@@ -1,0 +1,12 @@
+{
+  "uuid": "099be8a0-9295-4ce3-a56b-201f9118f52b",
+  "title": "Rolling sum: what prints?",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "MC",
+    "accumulator",
+    "indexing"
+  ],
+  "type": "v3"
+}

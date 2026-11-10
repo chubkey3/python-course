@@ -1,0 +1,11 @@
+{
+  "uuid": "535fa622-b391-4ff0-9476-7db8026a3d48",
+  "title": "Put the lines in order: print a list backwards",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "range",
+    "indexing"
+  ],
+  "type": "v3"
+}

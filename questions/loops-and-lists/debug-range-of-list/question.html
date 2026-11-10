@@ -1,0 +1,24 @@
+<pl-question-panel>
+  <p>This program crashes:</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true" show-line-numbers="true"></pl-code>
+  <p>Python shows this error:</p>
+  <pre>Traceback (most recent call last):
+  File &quot;main.py&quot;, line 2, in &lt;module&gt;
+    for i in range(nums):
+             ~~~~~^^^^^^
+TypeError: &#x27;list&#x27; object cannot be interpreted as an integer</pre>
+  <p>Which change fixes it?</p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="fix" weight="1">
+  <pl-answer correct="true">Change <code>range(nums)</code> to <code>range(len(nums))</code></pl-answer>
+  <pl-answer correct="false" feedback="That goes one index too far: nums[3] does not exist (IndexError).">Change <code>range(nums)</code> to <code>range(len(nums) + 1)</code></pl-answer>
+  <pl-answer correct="false" feedback="i doesn&#x27;t exist yet when the loop starts (NameError).">Change <code>range(nums)</code> to <code>range(nums[i])</code></pl-answer>
+  <pl-answer correct="false" feedback="A whole list can&#x27;t be turned into one int.">Change <code>range(nums)</code> to <code>range(int(nums))</code></pl-answer>
+  <pl-answer correct="false" feedback="Then i is a value (4, 7, 1), and nums[4] does not exist (IndexError).">Change <code>for i in range(nums):</code> to <code>for i in nums:</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>range()</code> needs a <strong>number</strong> (how many times to loop), not the list itself. <code>len(nums)</code> is that number (<code>3</code>), so
+  <code>range(len(nums))</code> gives the indices <code>0, 1, 2</code> and the program prints <code>4 7 1</code>.</p>
+</pl-answer-panel>

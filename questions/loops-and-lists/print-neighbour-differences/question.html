@@ -1,0 +1,19 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>3 -6 7</code></pl-answer>
+  <pl-answer correct="false" feedback="Check the order: it is nums[i] minus the item BEFORE it."><code>-3 6 -7</code></pl-answer>
+  <pl-answer correct="false" feedback="That would happen if the range started at 0 (nums[0] - nums[-1]). It starts at 1."><code>-4 3 -6 7</code></pl-answer>
+  <pl-answer correct="false" feedback="The code subtracts the items, not the indices."><code>1 1 1</code></pl-answer>
+  <pl-answer correct="false" feedback="i goes 1, 2, 3, so i - 1 is 0, 1, 2. Every index exists."><code>IndexError</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>i</code> goes <code>1, 2, 3</code>. Each time it prints an item minus the item before it:</p>
+  <ul><li><code>i = 1</code>: <code>8 - 5 = 3</code></li><li><code>i = 2</code>: <code>2 - 8 = -6</code></li><li><code>i = 3</code>: <code>9 - 2 = 7</code></li></ul>
+  <p>Starting at 1 matters: at <code>i = 0</code>, <code>nums[i - 1]</code> would be <code>nums[-1]</code>, the <em>last</em> item.</p>
+</pl-answer-panel>

@@ -1,0 +1,25 @@
+<pl-question-panel>
+  <p>This program crashes:</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true" show-line-numbers="true"></pl-code>
+  <p>Python shows this error:</p>
+  <pre>Traceback (most recent call last):
+  File &quot;main.py&quot;, line 4, in &lt;module&gt;
+    if nums[i + 1] &gt; nums[i]:
+       ~~~~^^^^^^^
+IndexError: list index out of range</pre>
+  <p>Which change fixes it?</p>
+  <details><summary><strong>Hint</strong></summary><p>On the last time through the loop, what is <code>i</code>? Which index does <code>nums[i + 1]</code> try to read? Does the list have that index?</p></details>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="fix" weight="1">
+  <pl-answer correct="true">Change <code>range(len(nums))</code> to <code>range(len(nums) - 1)</code></pl-answer>
+  <pl-answer correct="false" feedback="That makes i go even further past the end.">Change <code>range(len(nums))</code> to <code>range(len(nums) + 1)</code></pl-answer>
+  <pl-answer correct="false" feedback="The last i is still 3, so nums[i + 1] is still nums[4].">Change <code>range(len(nums))</code> to <code>range(1, len(nums))</code></pl-answer>
+  <pl-answer correct="false" feedback="No crash, but it skips the last pair (3, 8) and prints 1 instead of 2.">Change <code>range(len(nums))</code> to <code>range(len(nums) - 2)</code></pl-answer>
+  <pl-answer correct="false" feedback="No crash, but nums[i] + 1 is always bigger than nums[i], so it counts every item and prints 4.">Change <code>nums[i + 1]</code> to <code>nums[i] + 1</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><strong>"Index out of range"</strong> means you asked for an index that doesn't exist. This list has 4 items, so its indices are <code>0, 1, 2, 3</code>; <code>nums[4]</code> is out of range.</p>
+  <p>The loop's last <code>i</code> is <code>3</code>, and then <code>nums[i + 1]</code> is <code>nums[4]</code>. Stop one earlier with <code>range(len(nums) - 1)</code>, so the last <code>i</code> is <code>2</code> and the last pair compared is <code>nums[3]</code> and <code>nums[2]</code>. It then prints <code>2</code> (5 &gt; 2 and 8 &gt; 3).</p>
+</pl-answer-panel>

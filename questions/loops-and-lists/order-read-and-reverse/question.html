@@ -1,0 +1,31 @@
+<pl-question-panel>
+  <p>The input is a number $N$, then $N$ numbers, one per line. Build a program that reads the numbers into a list and then prints them in <strong>reverse</strong> order, one per line.</p>
+  <p>Drag the lines into order and indent them correctly. Not every line is used.</p>
+</pl-question-panel>
+
+<pl-order-blocks answers-name="code" format="code" code-language="python" indentation="true" grading-method="dag">
+  <pl-answer correct="true" tag="read-n" indent="0">n = int(input())</pl-answer>
+  <pl-answer correct="true" tag="make-list" indent="0">nums = []</pl-answer>
+  <pl-answer correct="true" tag="loop-read" depends="read-n,make-list" indent="0">for i in range(n):</pl-answer>
+  <pl-answer correct="true" tag="append" depends="loop-read" indent="1">nums.append(int(input()))</pl-answer>
+  <pl-answer correct="true" tag="loop-back" depends="append" indent="0">for i in range(n - 1, -1, -1):</pl-answer>
+  <pl-answer correct="true" tag="print" depends="loop-back" indent="1">print(nums[i])</pl-answer>
+  <pl-answer correct="false">for i in range(n - 1, 0, -1):</pl-answer>
+  <pl-answer correct="false">for i in range(n, 0, -1):</pl-answer>
+  <pl-answer correct="false">print(nums)</pl-answer>
+</pl-order-blocks>
+
+<pl-answer-panel>
+  <pre>n = int(input())
+nums = []
+for i in range(n):
+    nums.append(int(input()))
+for i in range(n - 1, -1, -1):
+    print(nums[i])</pre>
+  <p>First build the list front to back. Then walk the indices backwards from the last index, <code>n - 1</code>, down to <code>0</code>. The stop value is not included, so it must be <code>-1</code>.</p>
+  <ul>
+    <li><code>range(n - 1, 0, -1)</code> stops before index 0, so the first number is never printed.</li>
+    <li><code>range(n, 0, -1)</code> starts at index <code>n</code>, which doesn't exist (IndexError).</li>
+    <li><code>print(nums)</code> prints the whole list in brackets, on one line.</li>
+  </ul>
+</pl-answer-panel>

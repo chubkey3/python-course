@@ -1,0 +1,27 @@
+{
+  "uuid": "51e971f3-22b3-4fae-b709-a1b6bb2accfe",
+  "title": "Running total",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "for-loop",
+    "accumulator"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

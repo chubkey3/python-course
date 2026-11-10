@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>5</code></pl-answer>
+  <pl-answer correct="false" feedback="Look where total = 0 is: inside the loop."><code>18</code></pl-answer>
+  <pl-answer correct="false" feedback="total = total + nums[i] runs after the reset, so total is not 0 at the end."><code>0</code></pl-answer>
+  <pl-answer correct="false" feedback="nums[i] adds the item, not the index."><code>3</code></pl-answer>
+  <pl-answer correct="false" feedback="The last item is nums[3], which is 5."><code>4</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>total = 0</code> is <strong>inside</strong> the loop, so the total is reset to 0 every time through. Each pass ends with <code>total</code> equal to just that item, and after the last pass it is <code>5</code>.</p><p>Fix: move <code>total = 0</code> to <em>before</em> the loop; then it prints <code>18</code>.</p>
+</pl-answer-panel>

@@ -1,0 +1,12 @@
+{
+  "uuid": "add0eb16-a955-46e3-bcd0-965fdf23520c",
+  "title": "Rolling sum: which line adds up the list?",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "MC",
+    "accumulator",
+    "indexing"
+  ],
+  "type": "v3"
+}

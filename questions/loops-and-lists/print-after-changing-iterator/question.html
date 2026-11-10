@@ -1,0 +1,19 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>[1, 2, 3]</code></pl-answer>
+  <pl-answer correct="false" feedback="Changing x does not change the list. x is just a copy of each item."><code>[2, 4, 6]</code></pl-answer>
+  <pl-answer correct="false" feedback="Nothing is appended to the list."><code>[1, 2, 3, 2, 4, 6]</code></pl-answer>
+  <pl-answer correct="false" feedback="The code prints nums, not x."><code>6</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>x</code> gets a copy of each item. <code>x = x * 2</code> changes <code>x</code> only; the list is never touched, so it still prints <code>[1, 2, 3]</code>.</p>
+  <p>To really double every item, loop over the indices and assign into the list:</p>
+  <pre>for i in range(len(nums)):
+    nums[i] = nums[i] * 2</pre>
+</pl-answer-panel>

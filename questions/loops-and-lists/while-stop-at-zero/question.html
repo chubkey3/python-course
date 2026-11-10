@@ -1,0 +1,24 @@
+<pl-question-panel>
+  <p>What does this code print when it is given the input below?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p>Input (one number per line):</p>
+  <pl-code source-file-name="input.txt" copy-code-button="true"></pl-code>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>11</code></pl-answer>
+  <pl-answer correct="false" feedback="The loop stops at 0, so the 9 is never read."><code>20</code></pl-answer>
+  <pl-answer correct="false" feedback="4 and 7 are added before the 0 is read."><code>0</code></pl-answer>
+  <pl-answer correct="false" feedback="After adding 4, the loop reads 7, which is not 0, so it keeps going."><code>4</code></pl-answer>
+  <pl-answer correct="false" feedback="total = total + number keeps the 4 as well."><code>7</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <table class="table table-sm">
+    <tr><th><code>number</code></th><th><code>number != 0</code>?</th><th><code>total</code></th></tr>
+    <tr><td>4</td><td>yes</td><td>0 + 4 = 4</td></tr>
+    <tr><td>7</td><td>yes</td><td>4 + 7 = 11</td></tr>
+    <tr><td>0</td><td>no, loop ends</td><td>11</td></tr>
+  </table>
+  <p>It prints <code>11</code>. The <code>9</code> comes after the 0, so it is never read.</p>
+</pl-answer-panel>

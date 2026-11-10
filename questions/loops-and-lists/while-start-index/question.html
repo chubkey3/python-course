@@ -1,0 +1,16 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>green blue yellow</code></pl-answer>
+  <pl-answer correct="false" feedback="i starts at 1, and colors[0] is red."><code>red green blue yellow</code></pl-answer>
+  <pl-answer correct="false" feedback="Look at where i starts and where it stops."><code>red green blue</code></pl-answer>
+  <pl-answer correct="false" feedback="i = 3 is still less than 4, so yellow prints."><code>green blue</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>i</code> starts at <code>1</code>, so index 0 (<code>red</code>) is skipped. It prints indices 1, 2, 3, and stops when <code>i</code> becomes 4 (<code>4 &lt; 4</code> is false).</p>
+</pl-answer-panel>

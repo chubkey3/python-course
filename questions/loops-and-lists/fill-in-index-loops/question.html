@@ -1,0 +1,67 @@
+<pl-question-panel>
+  <p>Choose the code that goes in each blank so the program does what it says.</p>
+</pl-question-panel>
+
+  <p><strong>(a)</strong> Print the list backwards: 9, then 3, then 7.</p>
+  <pl-code language="python" source-file-name="part_a.py" copy-code-button="true"></pl-code>
+  <p>Blank <code>__1__</code>: <pl-multiple-choice answers-name="a1" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">-1</pl-answer>
+  <pl-answer correct="false">0</pl-answer>
+  <pl-answer correct="false">1</pl-answer>
+  <pl-answer correct="false">len(nums)</pl-answer>
+</pl-multiple-choice> &nbsp; Blank <code>__2__</code>: <pl-multiple-choice answers-name="a2" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">-1</pl-answer>
+  <pl-answer correct="false">1</pl-answer>
+  <pl-answer correct="false">0</pl-answer>
+  <pl-answer correct="false">-2</pl-answer>
+</pl-multiple-choice></p>
+  <p><strong>(b)</strong> Print the index of the largest value, then the value. It should print 2 9.</p>
+  <pl-code language="python" source-file-name="part_b.py" copy-code-button="true"></pl-code>
+  <p>Blank <code>__1__</code>: <pl-multiple-choice answers-name="b1" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">best</pl-answer>
+  <pl-answer correct="false">i</pl-answer>
+  <pl-answer correct="false">i - 1</pl-answer>
+  <pl-answer correct="false">0</pl-answer>
+</pl-multiple-choice> &nbsp; Blank <code>__2__</code>: <pl-multiple-choice answers-name="b2" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">i</pl-answer>
+  <pl-answer correct="false">nums[i]</pl-answer>
+  <pl-answer correct="false">best</pl-answer>
+  <pl-answer correct="false">i + 1</pl-answer>
+</pl-multiple-choice></p>
+  <p><strong>(c)</strong> Count how many items are bigger than the item before them. It should print 2.</p>
+  <pl-code language="python" source-file-name="part_c.py" copy-code-button="true"></pl-code>
+  <p>Blank <code>__1__</code>: <pl-multiple-choice answers-name="c1" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">1</pl-answer>
+  <pl-answer correct="false">0</pl-answer>
+  <pl-answer correct="false">2</pl-answer>
+  <pl-answer correct="false">-1</pl-answer>
+</pl-multiple-choice> &nbsp; Blank <code>__2__</code>: <pl-multiple-choice answers-name="c2" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">i - 1</pl-answer>
+  <pl-answer correct="false">i + 1</pl-answer>
+  <pl-answer correct="false">i</pl-answer>
+  <pl-answer correct="false">0</pl-answer>
+</pl-multiple-choice></p>
+
+<pl-answer-panel>
+  <p><strong>(a)</strong></p>
+  <pre>nums = [7, 3, 9]
+for i in range(len(nums) - 1, -1, -1):
+    print(nums[i])</pre>
+  <p>Start at the last index (<code>2</code>) and step <code>-1</code>. The stop value is <em>not</em> included, so to reach index <code>0</code> the stop must be <code>-1</code>. A stop of <code>0</code> would print only <code>9 3</code>.</p>
+  <p><strong>(b)</strong></p>
+  <pre>nums = [6, 2, 9, 4]
+best = 0    # index of the largest value so far
+for i in range(1, len(nums)):
+    if nums[i] &gt; nums[best]:
+        best = i
+print(best, nums[best])</pre>
+  <p><code>best</code> stores an <strong>index</strong>, so compare against <code>nums[best]</code> and store the new index <code>i</code>. The largest value is always <code>nums[best]</code>, so no separate variable for it is needed.</p>
+  <p><strong>(c)</strong></p>
+  <pre>nums = [9, 5, 3, 4, 8]
+count = 0
+for i in range(1, len(nums)):
+    if nums[i] &gt; nums[i - 1]:
+        count = count + 1
+print(count)</pre>
+  <p>The item before index <code>i</code> is at <code>i - 1</code>. Index 0 has nothing before it, so start at <code>1</code>. Starting at <code>0</code> would compare <code>nums[0]</code> with <code>nums[-1]</code> (the last item) and wrongly print 3. Using <code>i + 1</code> would read past the end: IndexError.</p>
+</pl-answer-panel>

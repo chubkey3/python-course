@@ -1,0 +1,17 @@
+<pl-question-panel>
+  <p>What does this code print?</p>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p><em>Each value is printed on its own line; the choices show them separated by spaces.</em></p>
+</pl-question-panel>
+
+<pl-multiple-choice answers-name="output" weight="1">
+  <pl-answer correct="true"><code>1 4 7 10</code></pl-answer>
+  <pl-answer correct="false" feedback="When count is 10, 10 &lt;= 10 is still true, so 10 is printed."><code>1 4 7</code></pl-answer>
+  <pl-answer correct="false" feedback="When count is 13, 13 &lt;= 10 is false, so the loop stops before printing it."><code>1 4 7 10 13</code></pl-answer>
+  <pl-answer correct="false" feedback="count starts at 1."><code>0 3 6 9</code></pl-answer>
+  <pl-answer correct="false" feedback="count goes up by 3 each time, not 1."><code>1 2 3 4 5 6 7 8 9 10</code></pl-answer>
+</pl-multiple-choice>
+
+<pl-answer-panel>
+  <p><code>count</code> starts at 1 and goes up by 3: <code>1, 4, 7, 10</code> are all <code>&lt;= 10</code>, so they print. Next it becomes 13, the condition <code>13 &lt;= 10</code> is false, and the loop stops.</p>
+</pl-answer-panel>

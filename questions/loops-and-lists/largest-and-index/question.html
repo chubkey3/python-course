@@ -1,0 +1,41 @@
+<pl-question-panel>
+  <p>You are given a list of integers. Print the largest value, and then its index. If the largest value appears more than once, print the <strong>first</strong> index where it appears.</p>
+  <p>Try it without using <code>max()</code>.</p>
+  <p><strong>Input:</strong> the first line contains an integer $N$ ($1 \le N \le 1000$), the length of the list. Each of the next $N$ lines contains one integer of the list (between $-1000$ and $1000$).</p>
+  <p><strong>Output:</strong> print the largest value on the first line and its index on the second line.</p>
+  <!-- BEGIN SAMPLES (generated from tests/cases.json by tools/check_question.py --fix; edit cases.json, not this block) -->
+  <p><strong>Sample input 1</strong></p>
+  <pl-code copy-code-button="true">5
+3
+9
+2
+9
+4</pl-code>
+  <p><strong>Sample output 1</strong></p>
+  <pre>9
+1</pre>
+  <p>The largest value is $9$. It appears at index $1$ and index $3$, and the first one is $1$.</p>
+  <p><strong>Sample input 2</strong></p>
+  <pl-code copy-code-button="true">3
+-5
+-2
+-8</pl-code>
+  <p><strong>Sample output 2</strong></p>
+  <pre>-2
+1</pre>
+  <p>Every number is negative. The largest is $-2$, at index $1$.</p>
+  <!-- END SAMPLES -->
+
+  <pl-workspace></pl-workspace>
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>
+
+<pl-answer-panel>
+  <p><strong>Model solution</strong></p>
+  <pl-code language="python" source-file-name="tests/solution.py"></pl-code>
+  <p>Keep just the <strong>index</strong> of the best item so far, <code>best</code>. Its value is always <code>nums[best]</code>, so no second variable is needed. Start with <code>best = 0</code> (the first item), not with the value 0, which would be wrong when every number is negative. Use <code>&gt;</code>, not <code>&gt;=</code>, so that a tie does not replace the first index.</p>
+</pl-answer-panel>

@@ -1,0 +1,11 @@
+{
+  "uuid": "16d9af02-bd08-477b-af20-33dc86209507",
+  "title": "Integer, list, or string?",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "indexing",
+    "iterators"
+  ],
+  "type": "v3"
+}

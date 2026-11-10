@@ -1,0 +1,46 @@
+<pl-question-panel>
+  <pl-code language="python" source-file-name="snippet.py" copy-code-button="true"></pl-code>
+  <p>For each loop, decide whether the iterator holds an <strong>index</strong> or a <strong>value</strong> (an item of the list).
+    Then type the iterator's value the <strong>first</strong> time through the loop.</p>
+</pl-question-panel>
+
+<table class="table table-sm">
+  <tr><th>Loop</th><th>Index or value?</th><th>First value</th></tr>
+  <tr><td><code>for i in range(len(nums)):</code></td><td><pl-multiple-choice answers-name="kind1" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">index</pl-answer>
+  <pl-answer correct="false">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first1" correct-answer="0" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td><code>for x in nums:</code></td><td><pl-multiple-choice answers-name="kind2" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="false">index</pl-answer>
+  <pl-answer correct="true">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first2" correct-answer="10" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td><code>for i in nums:</code></td><td><pl-multiple-choice answers-name="kind3" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="false">index</pl-answer>
+  <pl-answer correct="true">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first3" correct-answer="10" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td><code>for i in range(1, len(nums)):</code></td><td><pl-multiple-choice answers-name="kind4" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">index</pl-answer>
+  <pl-answer correct="false">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first4" correct-answer="1" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td><code>for i in range(len(nums) - 1, -1, -1):</code></td><td><pl-multiple-choice answers-name="kind5" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">index</pl-answer>
+  <pl-answer correct="false">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first5" correct-answer="3" size="5" show-help-text="false"></pl-integer-input></td></tr>
+  <tr><td><code>for n in range(len(nums)):</code></td><td><pl-multiple-choice answers-name="kind6" weight="1" display="dropdown" order="fixed">
+  <pl-answer correct="true">index</pl-answer>
+  <pl-answer correct="false">value</pl-answer>
+</pl-multiple-choice></td><td><pl-integer-input answers-name="first6" correct-answer="0" size="5" show-help-text="false"></pl-integer-input></td></tr>
+</table>
+
+<pl-answer-panel>
+  <table class="table table-sm">
+    <tr><th>Loop</th><th>Kind</th><th>First</th><th>Why</th></tr>
+    <tr><td><code>for i in range(len(nums)):</code></td><td>index</td><td><code>0</code></td><td>range(len(nums)) gives the indices 0, 1, 2, 3.</td></tr>
+    <tr><td><code>for x in nums:</code></td><td>value</td><td><code>10</code></td><td>Looping over the list itself gives its items: 10, 20, 30, 40.</td></tr>
+    <tr><td><code>for i in nums:</code></td><td>value</td><td><code>10</code></td><td>After in comes the list itself, so the iterator gets the items: 10, 20, 30, 40.</td></tr>
+    <tr><td><code>for i in range(1, len(nums)):</code></td><td>index</td><td><code>1</code></td><td>range(1, 4) gives the indices 1, 2, 3.</td></tr>
+    <tr><td><code>for i in range(len(nums) - 1, -1, -1):</code></td><td>index</td><td><code>3</code></td><td>range(3, -1, -1) gives the indices 3, 2, 1, 0 (backwards).</td></tr>
+    <tr><td><code>for n in range(len(nums)):</code></td><td>index</td><td><code>0</code></td><td>range(len(nums)) gives the indices 0, 1, 2, 3.</td></tr>
+  </table>
+  <p><strong>Key idea:</strong> look at what comes after <code>in</code>. The list itself gives values; <code>range(...)</code> gives indices.</p>
+</pl-answer-panel>

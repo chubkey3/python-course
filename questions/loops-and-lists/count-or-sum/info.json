@@ -1,0 +1,12 @@
+{
+  "uuid": "33c91895-10de-4d07-a6b5-aec786ec35ed",
+  "title": "Count or sum?",
+  "topic": "Loops and lists",
+  "tags": [
+    "concept",
+    "accumulator",
+    "indexing",
+    "if-statement"
+  ],
+  "type": "v3"
+}

@@ -1,0 +1,29 @@
+{
+  "uuid": "ba3f220c-a640-41a4-bcf1-7923c7e98199",
+  "title": "Largest value and its index",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "for-loop",
+    "indexing",
+    "if-statement",
+    "searching"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

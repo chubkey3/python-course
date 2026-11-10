@@ -45,7 +45,10 @@ def normalize(text: str, mode: str):
 def render_samples(cases: list[dict]) -> str:
     parts = []
     for i, c in enumerate([c for c in cases if c.get("hidden", True) is False], start=1):
-        parts.append(f"  <p><strong>Sample input {i}</strong></p>\n  <pre>{html.escape(c['input'].rstrip())}</pre>")
+        parts.append(
+            f"  <p><strong>Sample input {i}</strong></p>\n"
+            f"  <pl-code copy-code-button=\"true\">{html.escape(c['input'].rstrip())}</pl-code>"
+        )
         parts.append(f"  <p><strong>Sample output {i}</strong></p>\n  <pre>{html.escape(c['output'].rstrip())}</pre>")
         if c.get("explanation"):
             parts.append(f"  <p>{c['explanation']}</p>")

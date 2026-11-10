@@ -1,0 +1,27 @@
+{
+  "uuid": "ba05c5b8-4c9e-4f86-9772-b14469c4cd15",
+  "title": "Sum until 0",
+  "topic": "Loops and lists",
+  "tags": [
+    "stdio",
+    "while-loop",
+    "accumulator"
+  ],
+  "type": "v3",
+  "singleVariant": true,
+  "workspaceOptions": {
+    "image": "prairielearn/workspace-vscode-python",
+    "gradedFiles": [
+      "main.py"
+    ]
+  },
+  "gradingMethod": "External",
+  "externalGradingOptions": {
+    "image": "prairielearn/grader-python",
+    "entrypoint": "/grade/serverFilesCourse/judge/run.sh",
+    "serverFilesCourse": [
+      "judge/"
+    ],
+    "timeout": 60
+  }
+}

@@ -16,52 +16,47 @@
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>nums[-1]</code>?</td><td><pl-multiple-choice answers-name="r3" weight="1" display="dropdown" order="fixed">
+  <tr><td>What is the type of <code>len(nums)</code>?</td><td><pl-multiple-choice answers-name="r3" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="true">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>len(nums)</code>?</td><td><pl-multiple-choice answers-name="r4" weight="1" display="dropdown" order="fixed">
+  <tr><td>In the loop <code>for x in nums:</code>, what is the type of the iterator <strong><code>x</code></strong>?</td><td><pl-multiple-choice answers-name="r4" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="true">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>In the loop <code>for x in nums:</code>, what is the type of the iterator <strong><code>x</code></strong>?</td><td><pl-multiple-choice answers-name="r5" weight="1" display="dropdown" order="fixed">
+  <tr><td>In the loop <code>for i in range(len(nums)):</code>, what is the type of the iterator <strong><code>i</code></strong>?</td><td><pl-multiple-choice answers-name="r5" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="true">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>In the loop <code>for i in range(len(nums)):</code>, what is the type of the iterator <strong><code>i</code></strong>?</td><td><pl-multiple-choice answers-name="r6" weight="1" display="dropdown" order="fixed">
-  <pl-answer correct="true">int</pl-answer>
-  <pl-answer correct="false">list</pl-answer>
-  <pl-answer correct="false">str</pl-answer>
-</pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>words</code>?</td><td><pl-multiple-choice answers-name="r7" weight="1" display="dropdown" order="fixed">
+  <tr><td>What is the type of <code>words</code>?</td><td><pl-multiple-choice answers-name="r6" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="false">int</pl-answer>
   <pl-answer correct="true">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>words[1]</code>?</td><td><pl-multiple-choice answers-name="r8" weight="1" display="dropdown" order="fixed">
+  <tr><td>What is the type of <code>words[1]</code>?</td><td><pl-multiple-choice answers-name="r7" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="false">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="true">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>In the loop <code>for w in words:</code>, what is the type of the iterator <strong><code>w</code></strong>?</td><td><pl-multiple-choice answers-name="r9" weight="1" display="dropdown" order="fixed">
+  <tr><td>In the loop <code>for w in words:</code>, what is the type of the iterator <strong><code>w</code></strong>?</td><td><pl-multiple-choice answers-name="r8" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="false">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="true">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>In the loop <code>for i in range(len(words)):</code>, what is the type of the iterator <strong><code>i</code></strong>?</td><td><pl-multiple-choice answers-name="r10" weight="1" display="dropdown" order="fixed">
+  <tr><td>In the loop <code>for i in range(len(words)):</code>, what is the type of the iterator <strong><code>i</code></strong>?</td><td><pl-multiple-choice answers-name="r9" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="true">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>input()</code>?</td><td><pl-multiple-choice answers-name="r11" weight="1" display="dropdown" order="fixed">
+  <tr><td>What is the type of <code>input()</code>?</td><td><pl-multiple-choice answers-name="r10" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="false">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="true">str</pl-answer>
 </pl-multiple-choice></td></tr>
-  <tr><td>What is the type of <code>int(input())</code>?</td><td><pl-multiple-choice answers-name="r12" weight="1" display="dropdown" order="fixed">
+  <tr><td>What is the type of <code>int(input())</code>?</td><td><pl-multiple-choice answers-name="r11" weight="1" display="dropdown" order="fixed">
   <pl-answer correct="true">int</pl-answer>
   <pl-answer correct="false">list</pl-answer>
   <pl-answer correct="false">str</pl-answer>
@@ -73,7 +68,6 @@
     <tr><th>Question</th><th>Answer</th><th>Why</th></tr>
     <tr><td>What is the type of <code>nums</code>?</td><td><code>list</code></td><td><code>nums</code> is the whole list.</td></tr>
     <tr><td>What is the type of <code>nums[2]</code>?</td><td><code>int</code></td><td>Indexing gives back <strong>one item</strong>: <code>nums[2]</code> is <code>15</code>.</td></tr>
-    <tr><td>What is the type of <code>nums[-1]</code>?</td><td><code>int</code></td><td>The last item, <code>23</code>.</td></tr>
     <tr><td>What is the type of <code>len(nums)</code>?</td><td><code>int</code></td><td>How many items the list has: <code>5</code>.</td></tr>
     <tr><td>In the loop <code>for x in nums:</code>, what is the type of the iterator <strong><code>x</code></strong>?</td><td><code>int</code></td><td><code>x</code> takes each <em>item</em> of the list: <code>4</code>, then <code>8</code>, then <code>15</code>, ...</td></tr>
     <tr><td>In the loop <code>for i in range(len(nums)):</code>, what is the type of the iterator <strong><code>i</code></strong>?</td><td><code>int</code></td><td><code>i</code> takes each <em>index</em>: <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>.</td></tr>

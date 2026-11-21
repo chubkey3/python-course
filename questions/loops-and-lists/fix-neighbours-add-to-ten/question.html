@@ -32,5 +32,7 @@
 <pl-answer-panel>
   <p><strong>Model solution</strong></p>
   <pl-code language="python" source-file-name="tests/solution.py"></pl-code>
-  <ul><li><strong>Bug 1:</strong> <code>count</code> never gets a starting value, so <code>count = count + 1</code> fails with <code>NameError</code>. Add <code>count = 0</code> before the loop.</li><li><strong>Bug 2:</strong> on the last pass, <code>i</code> is <code>n - 1</code> and <code>nums[i + 1]</code> is <code>nums[n]</code>, which doesn't exist (<code>IndexError: list index out of range</code>). The last pair starts at index <code>n - 2</code>, so loop over <code>range(n - 1)</code>.</li></ul>
+  <ul><li>
+    <strong>Bug 1:</strong> <code>count</code> never gets a starting value, so <code>count = count + 1</code> fails with <code>NameError</code>. Add <code>count = 0</code> before the loop.</li><li>
+    <strong>Bug 2:</strong> on the last pass, <code>i</code> is the last index of the list and <code>i+1</code> is outside of the list (<code>IndexError: list index out of range</code>). We must stop one before the end of the list to ensure we aren't using indices that don't exist in our list.</li></ul>
 </pl-answer-panel>
